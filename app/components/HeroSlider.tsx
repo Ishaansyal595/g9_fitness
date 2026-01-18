@@ -26,7 +26,8 @@ const HeroSlider = () => {
               >
                 {i === 0 ? (
                   <>
-                    <span>Where hard</span> work meets success
+                    <span className="text-accent">Where hard</span> work meets
+                    success
                   </>
                 ) : (
                   <>
