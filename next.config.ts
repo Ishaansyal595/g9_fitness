@@ -2,7 +2,20 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ["images.pexels.com", "seeklogo.com", "upload.wikimedia.org"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+      {
+        protocol: "https",
+        hostname: "seeklogo.com",
+      },
+      {
+        protocol: "https",
+        hostname: "upload.wikimedia.org",
+      },
+    ],
   },
 };
 
