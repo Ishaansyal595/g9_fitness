@@ -13,10 +13,10 @@ import {
 } from "react-icons/fa";
 
 import CustomButton from "./CustomButton";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const Footer = () => {
-  const footerContainerVariants = {
+  const footerContainerVariants: Variants = {
     hidden: {
       opacity: 0,
     },
@@ -30,7 +30,7 @@ const Footer = () => {
     },
   };
 
-  const footerItem = {
+  const footerItem: Variants = {
     hidden: {
       y: 20,
       opacity: 0,
@@ -39,7 +39,7 @@ const Footer = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.25, 0.6, 0.3, 0.8],
+        ease: "easeOut",
       },
     },
   };

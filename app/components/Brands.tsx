@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const Brands = () => {
   const brandsLogo = [
@@ -29,7 +29,7 @@ const Brands = () => {
     },
   ];
 
-  const brandContainerVariants = {
+  const brandContainerVariants: Variants = {
     hidden: {
       opacity: 0,
     },
@@ -43,7 +43,7 @@ const Brands = () => {
     },
   };
 
-  const brandItem = {
+  const brandItem: Variants = {
     hidden: {
       y: 20,
       opacity: 0,
@@ -52,7 +52,7 @@ const Brands = () => {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: [0.25, 0.6, 0.3, 0.8],
+        ease: "easeOut",
       },
     },
   };
